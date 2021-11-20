@@ -230,22 +230,8 @@ body {
 }
 
 .social-home ul {
-    margin-top: -65px;
-    margin-left: -160vh;
+
+
     z-index: 1000;
 }
 
-@media screen and (max-width: 980px) {
-    .social-home ul {
-        margin-top: 30px;
-        margin-left: -48vh;
-    }
-}
-  
-
-@media screen and (max-width: 550px) {
-    .social-home ul {
-        margin-top: 30px;
-        margin-left: -4vh;
-    }
-}
