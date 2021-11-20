@@ -1,0 +1,251 @@
+body {
+    background: #212534;
+}
+
+.logo img {
+    height: 50px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.grids {
+    display: grid;
+    grid-template-columns: 80% 40%;
+    align-self: start;
+}
+
+.left
+{
+  position: relative;
+  z-index: 10;
+  font-family: 'Poppins', sans-serif;
+  margin-top: 40px;
+  margin-left: 100px;
+
+}
+
+.right .mock1{
+  height: 75vh;
+  margin-left: -120px;
+}
+
+.right .mock2 {
+  height: 75vh;
+  margin-top: 70px;
+}
+
+
+@media screen and (max-width: 550px) {
+    .grids {
+      grid-template-columns: 1fr;
+      margin-left: -70px;
+    }
+  }
+
+.left h2
+{
+  font-size: 4em;
+  font-weight: 800;
+  color: #fff;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+.left h3
+{
+  margin-top: -40px;
+  font-size: 3em;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 550px) {
+    .left h2 {
+        font-size: 3em;
+        font-weight: 800;
+        color: #fff;
+        line-height: 1em;
+        text-transform: uppercase;
+    }
+
+    .left h3
+    {
+    margin-top: -30px;
+    font-size: 2.5em;
+    font-weight: 700;
+    color: #fff;
+    line-height: 1em;
+    text-transform: uppercase;
+    }
+}
+
+@media screen and (max-width: 550px) {
+
+    .right .mock1 {
+        margin-left: 110px;
+        height: 55vh;
+    }
+
+    .right .mock2 {
+        height: 55vh;
+    }
+  
+  
+}
+
+
+.left p
+{
+  font-size: 1.1em;
+  color: #fff;
+  margin: 20px 0;
+  font-weight: 400;
+  max-width: 700px;
+}
+
+/*Subscribe*/
+.btn {
+    border-radius: 5px;
+    position: relative;
+    padding: 15px 20px;
+    background: #fff;
+    font-size: 18px;
+    display: inline-block;
+    text-decoration: none;
+    color: #FEA400;
+    cursor: pointer;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: 0.5s;
+    
+}
+
+@media screen and (max-width: 550px) {
+    .btn {
+      margin-left: 80px;
+    }
+}
+
+#modal {
+    position: fixed;
+    top: -100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    background: #fff;
+    width: 300px;
+    padding: 80px 50px 50px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
+    transition: 0.5s;
+    visibility: hidden;
+}
+
+.active {
+    visibility: visible !important;
+    top: 50% !important;
+}
+
+ .content {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+ .content img {
+    max-width: 80px;
+}
+
+ .content h2 {
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+    margin: 20px 0 10px;
+}
+
+ .content p {
+    text-align: center;
+    font-size: 16px;
+    color: #333;
+}
+
+ .content .inputBox {
+    position: relative;
+    width: 100;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ .content .inputBox input {
+    width: 320px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    outline: none;
+    font-size: 18px;
+}
+
+ .content .inputBox input[type="submit"] {
+    max-width: 150px;
+    background: #FEA400;
+    color: #fff;
+    border: none;
+}
+
+.fa-close {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    color: #333;
+    cursor: pointer;
+}
+.fa-envelope{
+    font-size: 100px !important;
+    color:  #FEA400;
+}
+ 
+
+.left span{
+  color: orange;
+  animation: animate 1s ease-in-out infinite alternate;
+  font-size: 1.3em;
+}
+
+@keyframes animate {
+  0% {
+    text-shadow: 0 0 20px orange;
+  }
+  50% {
+    text-shadow: 0 0 30px orange,
+                 0 0 10px orange;
+  }
+  100% {
+    color: orange;
+  }
+}
+
+.social-home ul {
+    margin-top: -65px;
+    margin-left: -160vh;
+    z-index: 1000;
+}
+
+@media screen and (max-width: 980px) {
+    .social-home ul {
+        margin-top: 30px;
+        margin-left: -48vh;
+    }
+}
+  
+
+@media screen and (max-width: 550px) {
+    .social-home ul {
+        margin-top: 30px;
+        margin-left: -4vh;
+    }
+}
