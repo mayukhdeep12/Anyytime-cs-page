@@ -49,7 +49,7 @@ body {
 
 @media screen and (max-width: 500px) {
   .right img {
-    height: 63vh;
+    height: 65vh;
   }
 }
 
@@ -78,7 +78,9 @@ body {
   text-transform: uppercase;
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 500px) {
+
+
     .left h2 {
         font-size: 3em;
         font-weight: 800;
