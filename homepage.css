@@ -48,6 +48,10 @@ body {
 }
 
 @media screen and (max-width: 500px) {
+
+  .right {
+    justify-self: end;
+  }
   .right img {
     height: 65vh;
   }
