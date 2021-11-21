@@ -230,20 +230,20 @@ body {
  
 
 .left span{
-  color: orange;
+  color: rgb(224, 117, 28);
   animation: animate 1s ease-in-out infinite alternate;
   font-size: 1.3em;
 }
 
 @keyframes animate {
   0% {
-    text-shadow: 0 0 20px orange;
+    text-shadow: 0 0 20px rgb(224, 117, 28);
   }
   50% {
-    text-shadow: 0 0 30px orange,
-                 0 0 10px orange;
+    text-shadow: 0 0 30px rgb(224, 117, 28),
+                 0 0 10px rgb(224, 117, 28);
   }
   100% {
-    color: orange;
+    color: rgb(224, 117, 28);
   }
 }
