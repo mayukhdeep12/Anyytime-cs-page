@@ -14,6 +14,12 @@ body {
     align-self: start;
 }
 
+.grids ul{
+  justify-content: start;
+  margin-top:40px;
+  margin-left: -40px;
+}
+
 .left
 {
   position: relative;
@@ -24,16 +30,28 @@ body {
 
 }
 
-.right .mock1{
-  height: 75vh;
+.right {
+  margin-top: 70px;
+  justify-self: end;
+  margin-top: 150px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.right img{
+  height: 70vh;
   margin-left: -120px;
 }
 
-.right .mock2 {
-  height: 75vh;
-  margin-top: 70px;
+.mosaic1 {
+  margin-top: -100px;
 }
 
+@media screen and (max-width: 500px) {
+  .right img {
+    height: 63vh;
+  }
+}
 
 @media screen and (max-width: 550px) {
     .grids {
@@ -80,19 +98,6 @@ body {
     }
 }
 
-@media screen and (max-width: 550px) {
-
-    .right .mock1 {
-        margin-left: 110px;
-        height: 55vh;
-    }
-
-    .right .mock2 {
-        height: 55vh;
-    }
-  
-  
-}
 
 
 .left p
@@ -102,6 +107,14 @@ body {
   margin: 20px 0;
   font-weight: 400;
   max-width: 700px;
+}
+
+@media screen and (max-width: 550px) {
+    .left p {
+        font-size: 1em;
+        color: #fff;
+        font-weight: 400;
+  }
 }
 
 /*Subscribe*/
@@ -124,7 +137,7 @@ body {
 
 @media screen and (max-width: 550px) {
     .btn {
-      margin-left: 80px;
+      justify-content: center;
     }
 }
 
@@ -228,10 +241,3 @@ body {
     color: orange;
   }
 }
-
-.social-home ul {
-
-
-    z-index: 1000;
-}
-
