@@ -4,26 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Anyytime Co.</title>
     <link rel="stylesheet" href="style.css" type="text/css">
     <link rel="stylesheet" href="homepage.css" type="text/css">
     <link rel="stylesheet" href="footer.css" type="text/css">
     <link rel="stylesheet" href="coming.css" type="text/css">
 
+    <link rel="shortcut icon" type="image/jpg" href="logo.png">
+
     <script src="subscribe.js"></script>
     <script src="like.js"></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <script src="https://kit.fontawesome.com/023371aa5c.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Shippori+Antique+B1&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Oswald:700|Neuton" rel="stylesheet" type="text/css">
 </head>
 <body>
-            <div class="logo">
+            <div class="logo" data-aos="fade-down">
                 <img src="logo2.png" alt="logo">
             </div>
             
             <div class="grids">
-                <div class="left">
+                <div class="left" data-aos="fade-right">
                     <h2>Spending Is </h2> 
                     <h3><span>Now</span> investing</h3>
                     <p>ITS NOT ABOUT FOOLING PEOPLE, ITS ABOUT CONVICING PEOPLE THAT YOU MUST HAVE IT EVEN IF YOU DON’T WANT IT”“IDEA IS TO REVOLUTIONIZE THE INVESTING AND MAKING PEOPLE UNDERSTAND POWER OF INVESTING”
@@ -59,7 +63,7 @@
                 </ul>
                 </div>
             
-                <div class="right">
+                <div class="right" data-aos="fade-left">
                     <div class="mosaic1">
                         <img src="mock2.png" alt="">
                     </div>
@@ -72,9 +76,9 @@
             
             
 
-        <p class="team"><span>our team</span></p>
+        <p class="team" data-aos="zoom-in"><span>our team</span></p>
         <div class="team-work">
-            <div class="container">
+            <div class="container" data-aos="zoom-in">
                 <div class="card">
                     <img src="profile2.png" alt="">
                     <h4>Tushar Kasaudhan</h4>
@@ -145,7 +149,7 @@
             </div>
         </div>
 
-        <div class="main">
+        <div class="main" data-aos="fade-up">
             <h1>REVOLUTIONIZE THE INVESTING<div class="roller">
               <span id="rolltext">We<br/>
               Are<br/>
@@ -179,7 +183,7 @@
           </div>
 
         <!--Footer-->
-        <footer class="footer">
+        <footer class="footer" data-aos="zoom-in">
             <div class="waves">
               <div class="wave" id="wave1"></div>
               <div class="wave" id="wave2"></div>
@@ -200,9 +204,18 @@
                   <ion-icon name="logo-instagram"></ion-icon>
                 </a></li>
             </ul>
-            <p>&copy;2021 Anyytime.co | All Rights Reserved</p>
+            <p>2021 Anyytime Co. | All Rights Reserved</p>
+
           </footer>
           <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
           <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+          <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+          <script>
+            AOS.init({
+                duration: 800, 
+                easing: 'ease',
+                offset: 100,
+            });
+            </script>
 </body>
 </html>
